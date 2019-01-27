@@ -29,3 +29,7 @@ O Projeto foi feito utilizando algums bibliotecas do kotlin
 
 * Para realizar o teste do get, para buscar todas os os eventos de uma issue, utilizei o postman, conforme print abaixo.
 ![Passo 4](config-4.jpg)
+
+#### Pontos de melhoria
+* Adicionar estratégia de migration conforme a evolução da solução
+* Adicionar estratégia de profile, para que seja possível diferenciar ambientes de desenvolvimento, homologação e produção
