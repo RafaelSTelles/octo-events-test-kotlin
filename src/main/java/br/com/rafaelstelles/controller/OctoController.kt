@@ -1,6 +1,6 @@
 package br.com.rafaelstelles.controller
 
-import br.com.rafaelstelles.dto.EventRequestDTO
+import br.com.rafaelstelles.dto.EventRequest
 import br.com.rafaelstelles.service.EventService
 import io.javalin.apibuilder.ApiBuilder.get
 import io.javalin.apibuilder.ApiBuilder.post
@@ -10,7 +10,7 @@ class OctoEndpoints(val service: EventService): EndpointGroup {
 
     override fun addEndpoints() {
         post("/events") { ctx ->
-            val request = ctx.bodyAsClass(EventRequestDTO::class.java)
+            val request = ctx.bodyAsClass(EventRequest::class.java)
             ctx.json(service.create(request))
         }
         get("/issues/:number/events") { ctx ->
