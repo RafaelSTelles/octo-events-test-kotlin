@@ -80,13 +80,32 @@
 			<artifactId>HikariCP</artifactId>
 			<version>${HikariCP.version}</version>
 		</dependency>
+
+		<!--Testes-->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.github.jkcclemens</groupId>
+			<artifactId>khttp</artifactId>
+			<version>0.1.0</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
+
 
 	<repositories>
 		<repository>
 			<id>exposed</id>
 			<name>exposed</name>
 			<url>https://dl.bintray.com/kotlin/exposed</url>
+		</repository>
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
 		</repository>
 	</repositories>
 

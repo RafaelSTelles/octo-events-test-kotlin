@@ -12,7 +12,7 @@ O Projeto foi feito utilizando algums bibliotecas do kotlin
 * IDE de desenvolvimento: Intellij IDEA
 
 #### Para rodar o projeto é preciso realizar os passos abaixo
-1. Criar um database no postgres chamado `octo_events` no postgres `create database octo_events;`
+1. Criar dois databases no postgres o primeiro é referente a aplicação (`octo_events`) e o segundo aos testes (`octo_events_it`) no postgres `create database octo_events; create database octo_events_it;`
 	* Verificar se as configs estão com a default do postgres (`porta: 5432, username: postgres, password: postgres`), caso não esteja é necessário mexer na classe [`DatabaseFactory`](src/main/java/br/com/rafaelstelles/factory/DatabaseFactory.kt) e configurar da forma como está o seu banco
 2. Executar o comando `mvn clean verify && ` dentro da pasta raíz do projeto
 3. Após realizar o passo anterior, execute `mvn exec:java -Dexec.mainClass="br.com.rafaelstelles.ApplicationKt"` na pasta raíz do projeto

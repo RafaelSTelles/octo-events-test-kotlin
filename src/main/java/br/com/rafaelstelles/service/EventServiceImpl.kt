@@ -29,6 +29,7 @@ class EventServiceImpl : EventService {
 
     override fun findAllEventDTOByNumber(number: String): List<EventResponse> = transaction {
         Event.select(Op.build { Event.number eq number })
+                .orderBy(Event.updatedAt)
                 .map { EventResponse(it[Event.action], it[Event.createdAt].toString()) }
     }
 }
