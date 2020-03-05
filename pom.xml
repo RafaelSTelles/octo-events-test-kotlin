@@ -9,7 +9,7 @@
 
 	<properties>
 		<kotlin.version>1.3.20</kotlin.version>
-		<jackson-databind.version>2.9.8</jackson-databind.version>
+		<jackson-databind.version>2.10.3</jackson-databind.version>
 		<slf4j-simple.version>1.7.25</slf4j-simple.version>
 		<javalin.version>2.6.0</javalin.version>
 		<exposed.version>0.12.1</exposed.version>
